@@ -13,7 +13,7 @@ let newplayer = document.getElementById("chip2")
 let chips = {DataType:"Player Name" ,Name: "Aadarsh", Amount: "500"}
 player.textContent = chips.DataType + " : " + chips.Name 
 newplayer.textContent = " Chips he have : $" + chips.Amount
-let chipsamount = chips.Amount
+let chipsamount = Number(chips.Amount)
 function amount(){
     if (chipsamount> 0){
         chipsamount = chipsamount - 500
